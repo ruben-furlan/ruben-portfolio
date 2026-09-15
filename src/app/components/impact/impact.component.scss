@@ -1,0 +1,67 @@
+.impact {
+  padding: 0 0 6rem;
+}
+
+.metrics-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-radius: var(--r-band);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-sunken);
+  overflow: hidden;
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.875rem 2rem;
+  border-right: 1px solid var(--border-subtle);
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.metric-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+
+  &.accent {
+    color: var(--accent);
+  }
+}
+
+.metric-label {
+  font-size: 0.81rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+}
+
+@media (max-width: 900px) {
+  .metrics-band {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-card {
+    border-bottom: 1px solid var(--border-subtle);
+
+    &:nth-child(2n) { border-right: none; }
+    &:nth-last-child(-n + 2) { border-bottom: none; }
+  }
+}
+
+@media (max-width: 520px) {
+  .metrics-band {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card {
+    border-right: none;
+
+    &:last-child { border-bottom: none; }
+  }
+}

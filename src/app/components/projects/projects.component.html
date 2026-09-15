@@ -1,0 +1,67 @@
+<section id="proyectos" class="projects">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="section-label">Proyectos</p>
+      <h2 class="section-title">Lo que construyo por mi cuenta.</h2>
+    </div>
+
+    <div class="projects-list">
+      @for (project of projects; track project.name; let i = $index) {
+        <article class="project-card fade-up" [style.transition-delay]="(i * 100) + 'ms'">
+          <div class="project-preview">
+            @if (project.image) {
+              <img [src]="project.image" [alt]="project.name" />
+            } @else {
+              <div class="preview-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2.5" y="4" width="19" height="16" rx="2" />
+                  <path d="M2.5 8.4 h19" />
+                  <circle cx="5.9" cy="6.2" r="0.7" />
+                  <circle cx="8.3" cy="6.2" r="0.7" />
+                </svg>
+                <span class="placeholder-title">Captura pendiente</span>
+                <span class="placeholder-note">{{ project.url }}</span>
+              </div>
+            }
+          </div>
+
+          <div class="project-body">
+            <div class="project-header">
+              @if (project.current) {
+                <span class="badge">
+                  <span class="dot"></span>
+                  En curso
+                </span>
+              }
+              <span class="project-period">{{ project.period }}</span>
+            </div>
+
+            <h3 class="project-name">{{ project.name }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+
+            <ul class="project-features">
+              @for (feat of project.features; track feat) {
+                <li>{{ feat }}</li>
+              }
+            </ul>
+
+            <div class="project-stack">
+              @for (tech of project.stack; track tech) {
+                <span class="tag">{{ tech }}</span>
+              }
+            </div>
+
+            @if (project.url) {
+              <a [href]="project.url" target="_blank" rel="noopener" class="project-link">
+                Visitar {{ project.urlLabel }}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17 L17 7 M9 7 h8 v8" />
+                </svg>
+              </a>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

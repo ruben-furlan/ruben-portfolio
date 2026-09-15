@@ -1,0 +1,63 @@
+<section id="hero" class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grain"></div>
+
+  <div class="container hero-content">
+    <div class="hero-left">
+      <div class="badge">
+        <span class="dot"></span>
+        Abierto a nuevas oportunidades
+      </div>
+
+      <h1 class="hero-title">
+        Construyo el backend de sistemas que
+        <em>mucha gente</em> usa cada día.
+      </h1>
+
+      <p class="hero-bio">
+        Soy <strong>Ruben Furlan</strong>, ingeniero backend con más de 10 años en sistemas
+        distribuidos de misión crítica. Hoy construyo la plataforma de pago del transporte
+        metropolitano de Barcelona.
+      </p>
+
+      <div class="hero-stack">
+        @for (tech of stack; track tech) {
+          <span class="tag">{{ tech }}</span>
+        }
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="scrollTo('contacto')">Hablemos</button>
+        <button class="btn-secondary" (click)="scrollTo('experiencia')">Ver experiencia</button>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo">
+        <img src="/rf-profile.png" alt="Ruben Furlan" />
+      </div>
+
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-value accent">80%</span>
+          <span class="metric-label">más rápido el motor de precios de Despegar</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">10M+</span>
+          <span class="metric-label">usuarios servidos en plataformas LATAM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-clients">
+      <span class="clients-label">He construido para</span>
+      <div class="clients-list">
+        @for (client of clients; track client) {
+          <span>{{ client }}</span>
+        }
+      </div>
+    </div>
+  </div>
+</section>

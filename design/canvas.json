@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "A · Papel técnico", "x": 0, "y": 0, "w": 1200, "h": 900 },
+    { "file": "Sistema.dc.html", "title": "B · Sistema distribuido", "x": 1320, "y": 0, "w": 1200, "h": 900 },
+    { "file": "Aurora.dc.html", "title": "C · Cálido y premium", "x": 2640, "y": 0, "w": 1200, "h": 900 }
+  ],
+  "annotations": [
+    { "id": "dir-a", "x": 0, "y": -250, "w": 560, "text": "A · PAPEL TÉCNICO\n\nEditorial suizo en papel claro: serif enorme, retículas visibles, mono para los datos. Rompe con el 99% de portfolios de developer (todos son dark + neón).\n\nA favor: se recuerda, se lee como una publicación, transmite seniority.\nEn contra: fondo claro; menos «techie» a primera vista. Requiere copy cuidado, la tipografía no perdona el relleno." },
+    { "id": "dir-b", "x": 1320, "y": -250, "w": 560, "text": "B · SISTEMA DISTRIBUIDO\n\nLa web ES la arquitectura: nodos, aristas, retícula técnica, monoespaciada y un verde ácido. Cada sección es un nodo del mapa.\n\nA favor: cuenta lo que haces sin explicarlo; muy original y coherente con backend/microservicios.\nEn contra: puede leerse frío o de nicho; el diagrama hay que mantenerlo honesto o queda decorativo." },
+    { "id": "dir-c", "x": 2640, "y": -250, "w": 560, "text": "C · CÁLIDO Y PREMIUM\n\nDark cálido (no azul), grotesca expresiva, tarjetas con profundidad real, acento ámbar. El titular vende una idea, no un cargo.\n\nA favor: el más «producto acabado» y el más seguro para recruiters; funciona muy bien en móvil.\nEn contra: es el más cercano a lo que ya tienes — moderno y pulido, pero menos arriesgado." },
+    { "id": "como-elegir", "x": 0, "y": 980, "w": 700, "text": "Elige una dirección (o mézclalas: p. ej. la tipografía de A con la calidez de C) y la desarrollo completa — hero, sobre mí, skills, experiencia, proyectos, contacto — antes de tocar el código Angular." }
+  ],
+  "launch": { "view": "canvas" }
+}

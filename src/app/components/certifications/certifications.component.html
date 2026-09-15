@@ -1,0 +1,24 @@
+<section id="certificaciones" class="certifications">
+  <div class="container">
+    <div class="certs-header fade-up">
+      <span class="certs-label">Formación continua</span>
+      <span class="certs-rule"></span>
+      <span class="certs-count">{{ certs.length }} certificaciones</span>
+    </div>
+
+    <div class="certs-grid">
+      @for (cert of certs; track cert.name; let i = $index) {
+        <div class="cert-card fade-up" [style.transition-delay]="(i * 40) + 'ms'">
+          <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="9" r="5.2" />
+            <path d="M8.4 13.4 L7 21 l5 -2.4 l5 2.4 l-1.4 -7.6" />
+          </svg>
+          <div class="cert-info">
+            <p class="cert-name">{{ cert.name }}</p>
+            <p class="cert-meta">{{ cert.platform }} · {{ cert.date }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

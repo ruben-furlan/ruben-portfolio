@@ -1,0 +1,78 @@
+<section id="experiencia" class="experience">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div>
+        <p class="section-label">Trayectoria</p>
+        <h2 class="section-title">Mi recorrido profesional.</h2>
+      </div>
+      <p class="section-subtitle">
+        Cinco compañías y tres países, siempre trabajando en producto real con usuarios
+        reales.
+      </p>
+    </div>
+
+    <div class="timeline">
+      @for (exp of experiences; track exp.company; let i = $index) {
+        <div class="timeline-item fade-up" [style.transition-delay]="(i * 80) + 'ms'">
+          <span class="exp-period">{{ exp.period }}</span>
+
+          <div class="timeline-rail">
+            <span class="timeline-dot" [class.current]="exp.current"></span>
+            <span class="timeline-line"></span>
+          </div>
+
+          <div class="exp-card" [class.current]="exp.current">
+            <div class="exp-header">
+              <div class="exp-meta">
+                <h3 class="exp-company">
+                  @if (exp.url) {
+                    <a [href]="exp.url" target="_blank" rel="noopener" class="exp-company-link">
+                      {{ exp.company }}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17 L17 7 M9 7 h8 v8" />
+                      </svg>
+                    </a>
+                  } @else {
+                    {{ exp.company }}
+                  }
+                </h3>
+                <span class="exp-role">{{ exp.role }}</span>
+                <span class="exp-location">{{ exp.location }}</span>
+              </div>
+              @if (exp.current) {
+                <span class="badge">
+                  <span class="dot"></span>
+                  Actual
+                </span>
+              }
+            </div>
+
+            <p class="exp-description">{{ exp.description }}</p>
+
+            @if (exp.achievements && exp.achievements.length) {
+              <div class="exp-achievements">
+                <span class="achievements-label">Logros</span>
+                <ul class="achievements-list">
+                  @for (a of exp.achievements; track a) {
+                    <li>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12 h13 M13 6 l6 6 -6 6" />
+                      </svg>
+                      <span>{{ a }}</span>
+                    </li>
+                  }
+                </ul>
+              </div>
+            }
+
+            <div class="exp-stack">
+              @for (tech of exp.stack; track tech) {
+                <span class="tag">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

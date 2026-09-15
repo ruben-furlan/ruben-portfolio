@@ -1,0 +1,68 @@
+<section id="sobre-mi" class="about">
+  <div class="container about-inner">
+
+    <div class="about-text fade-up">
+      <p class="section-label">Sobre mí</p>
+      <h2 class="section-title">Diez años de backend entre Caracas, Montevideo y Barcelona.</h2>
+
+      <p class="bio">
+        Ingeniero en Informática y Senior Software Engineer con más de 10 años en desarrollo
+        backend y arquitectura de software. He trabajado en Venezuela, Uruguay y España para
+        compañías de alcance internacional.
+      </p>
+      <p class="bio">
+        Me especializo en sistemas distribuidos y aplicaciones de misión crítica: alta
+        concurrencia, tráfico intensivo y operación simultánea en varios países de Latinoamérica.
+        Sistemas que usa mucha gente a la vez, donde cuidar el rendimiento y la estabilidad
+        forma parte del día a día.
+      </p>
+      <p class="bio">
+        Trayectoria en <strong>Despegar.com</strong> y <strong>PedidosYa (Delivery Hero SE)</strong>.
+        Actualmente desarrollo los sistemas de pago de la
+        <strong>Autoritat del Transport Metropolità de Barcelona</strong>.
+      </p>
+
+      <div class="languages">
+        <span class="languages-label">Idiomas</span>
+        @for (lang of languages; track lang; let last = $last) {
+          <span class="language">{{ lang }}</span>
+          @if (!last) {
+            <span class="language-divider"></span>
+          }
+        }
+      </div>
+    </div>
+
+    <div class="highlights">
+      @for (h of highlights; track h.title; let i = $index) {
+        <div class="highlight-card fade-up" [style.transition-delay]="(i * 100) + 'ms'">
+          <span class="highlight-icon">
+            @if (h.icon === 'bolt') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 L4.5 13.5 h6 L11 22 l8.5 -11.5 h-6 z" />
+              </svg>
+            }
+            @if (h.icon === 'nodes') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4.6" r="2.4" />
+                <circle cx="5" cy="19" r="2.4" />
+                <circle cx="19" cy="19" r="2.4" />
+                <path d="M10.6 6.6 L6.4 16.8 M13.4 6.6 L17.6 16.8 M7.4 19 h9.2" />
+              </svg>
+            }
+            @if (h.icon === 'globe') {
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12 h18" />
+                <path d="M12 3 c2.6 2.7 4 5.8 4 9 s-1.4 6.3 -4 9 c-2.6 -2.7 -4 -5.8 -4 -9 s1.4 -6.3 4 -9 z" />
+              </svg>
+            }
+          </span>
+          <h3 class="highlight-title">{{ h.title }}</h3>
+          <p class="highlight-desc">{{ h.desc }}</p>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

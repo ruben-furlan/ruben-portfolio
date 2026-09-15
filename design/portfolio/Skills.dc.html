@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #e0a458; text-decoration: none; }
+    a:hover { color: #c8873c; }
+  </style>
+</helmet>
+<div style="width: 1200px; height: 1000px; overflow: hidden; background: #12100e; color: #f2ede6; font-family: 'Manrope', system-ui, sans-serif; display: flex; flex-direction: column; padding: 76px 56px 0 56px;">
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 48px;">
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="width: 26px; height: 1px; background: #e0a458;"></span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #e0a458;">Stack</span>
+      </div>
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 46px; line-height: 1.06; letter-spacing: -0.032em;">Las herramientas<br>del oficio.</h2>
+    </div>
+    <p style="margin: 0 0 6px 0; max-width: 380px; font-size: 15.5px; line-height: 1.7; color: #a2988c; text-wrap: pretty;">No colecciono tecnologías: uso las que llevo años poniendo en producción. En ámbar, mi núcleo del día a día.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 40px;">
+    <div style="padding: 20px 22px; border-radius: 16px; background: rgba(224, 164, 88, 0.07); border: 1px solid rgba(224, 164, 88, 0.22); display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.02em; color: #e0a458;">Java</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8f8578;">10+ años</span>
+    </div>
+    <div style="padding: 20px 22px; border-radius: 16px; background: rgba(224, 164, 88, 0.07); border: 1px solid rgba(224, 164, 88, 0.22); display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.02em; color: #e0a458;">Spring Boot</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8f8578;">8 años</span>
+    </div>
+    <div style="padding: 20px 22px; border-radius: 16px; background: rgba(224, 164, 88, 0.07); border: 1px solid rgba(224, 164, 88, 0.22); display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.02em; color: #e0a458;">Kafka</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8f8578;">event-driven</span>
+    </div>
+    <div style="padding: 20px 22px; border-radius: 16px; background: rgba(224, 164, 88, 0.07); border: 1px solid rgba(224, 164, 88, 0.22); display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.02em; color: #e0a458;">Kubernetes</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8f8578;">AWS EKS</span>
+    </div>
+    <div style="padding: 20px 22px; border-radius: 16px; background: rgba(224, 164, 88, 0.07); border: 1px solid rgba(224, 164, 88, 0.22); display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.02em; color: #e0a458;">Elasticsearch</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8f8578;">v2.4 → v5.6</span>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px;">
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Lenguajes & Frameworks</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Java</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Spring Boot</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Spring Framework</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Go</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Python</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Arquitectura</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Microservicios</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Hexagonal</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">DDD</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Event-Driven</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">REST APIs</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Bases de datos</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Elasticsearch</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">PostgreSQL</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">MySQL</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">MariaDB</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Cassandra</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Cloud & DevOps</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">AWS EKS</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Kubernetes</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Docker</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Jenkins</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">CI/CD</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Git</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Mensajería</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Apache Kafka</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">RabbitMQ</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Observabilidad & Calidad</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">New Relic</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Datadog</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">TDD</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">BDD</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">JUnit</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Mockito</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Agile Scrum</span>
+        </div>
+      </div>
+      <div style="padding: 22px 24px; border-radius: 16px; background: #1a1714; border: 1px solid #262119; display: flex; flex-direction: column; gap: 14px;">
+        <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 15.5px; letter-spacing: -0.005em; color: #f2ede6;">Seguridad & API</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 7px;">
+          <span style="padding: 6px 12px; border-radius: 7px; background: rgba(224, 164, 88, 0.11); border: 1px solid rgba(224, 164, 88, 0.28); font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #e0a458;">Spring Security</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">JWT</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">OAuth2</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Swagger / OpenAPI</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Maven</span>
+          <span style="padding: 6px 12px; border-radius: 7px; background: #1f1b16; border: 1px solid #2a251e; font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #b6ac9f;">Gradle</span>
+        </div>
+      </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
