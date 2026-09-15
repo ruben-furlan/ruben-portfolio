@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 interface SkillGroup {
   title: string;
-  skills: { name: string; accent?: boolean }[];
+  skills: string[];
 }
 
 @Component({
@@ -16,85 +16,34 @@ interface SkillGroup {
 export class SkillsComponent implements AfterViewInit {
   constructor(private el: ElementRef) {}
 
-  readonly featured = [
-    { name: 'Java', note: '10+ años' },
-    { name: 'Spring Boot', note: 'microservicios' },
-    { name: 'Kafka', note: 'event-driven' },
-    { name: 'Kubernetes', note: 'AWS EKS' },
-    { name: 'Elasticsearch', note: 'v2.4 → v5.6' },
-  ];
-
   skillGroups: SkillGroup[] = [
     {
       title: 'Lenguajes & Frameworks',
-      skills: [
-        { name: 'Java', accent: true },
-        { name: 'Spring Boot', accent: true },
-        { name: 'Spring Framework' },
-        { name: 'Go' },
-        { name: 'Python' },
-      ],
+      skills: ['Java', 'Spring Boot', 'Spring Framework', 'Go', 'Python'],
     },
     {
       title: 'Arquitectura',
-      skills: [
-        { name: 'Microservicios', accent: true },
-        { name: 'Hexagonal' },
-        { name: 'DDD' },
-        { name: 'REST APIs' },
-        { name: 'Event-Driven' },
-      ],
+      skills: ['Microservicios', 'Hexagonal', 'DDD', 'REST APIs', 'Event-Driven'],
     },
     {
       title: 'Bases de datos',
-      skills: [
-        { name: 'MySQL' },
-        { name: 'MariaDB' },
-        { name: 'Cassandra' },
-        { name: 'Elasticsearch', accent: true },
-        { name: 'PostgreSQL' },
-      ],
+      skills: ['MySQL', 'MariaDB', 'Cassandra', 'Elasticsearch', 'PostgreSQL'],
     },
     {
       title: 'Cloud & DevOps',
-      skills: [
-        { name: 'AWS EKS', accent: true },
-        { name: 'Kubernetes' },
-        { name: 'Docker' },
-        { name: 'Jenkins' },
-        { name: 'CI/CD' },
-        { name: 'Git' },
-      ],
+      skills: ['AWS EKS', 'Kubernetes', 'Docker', 'Jenkins', 'CI/CD', 'Git'],
     },
     {
       title: 'Mensajería',
-      skills: [
-        { name: 'Apache Kafka', accent: true },
-        { name: 'RabbitMQ' },
-      ],
+      skills: ['Apache Kafka', 'RabbitMQ'],
     },
     {
       title: 'Observabilidad & Calidad',
-      skills: [
-        { name: 'New Relic' },
-        { name: 'Datadog' },
-        { name: 'TDD' },
-        { name: 'BDD' },
-        { name: 'JUnit' },
-        { name: 'Mockito' },
-        { name: 'Agile Scrum' },
-      ],
+      skills: ['New Relic', 'Datadog', 'TDD', 'BDD', 'JUnit', 'Mockito', 'Agile Scrum'],
     },
     {
       title: 'Seguridad & API',
-      skills: [
-        { name: 'Spring Security', accent: true },
-        { name: 'JWT' },
-        { name: 'OAuth2' },
-        { name: 'Swagger / OpenAPI' },
-        { name: 'Maven' },
-        { name: 'Gradle' },
-      ],
+      skills: ['Spring Security', 'JWT', 'OAuth2', 'Swagger / OpenAPI', 'Maven', 'Gradle'],
     },
   ];
 

@@ -6,18 +6,9 @@
         <h2 class="section-title">Las herramientas con las que trabajo.</h2>
       </div>
       <p class="section-subtitle">
-        Tecnologías que he usado en producción durante años.
-        En ámbar, las que más uso en mi día a día.
+        Tecnologías que he usado en producción durante años,
+        agrupadas por área.
       </p>
-    </div>
-
-    <div class="featured-grid">
-      @for (item of featured; track item.name; let i = $index) {
-        <div class="featured-card fade-up" [style.transition-delay]="(i * 60) + 'ms'">
-          <span class="featured-name">{{ item.name }}</span>
-          <span class="featured-note">{{ item.note }}</span>
-        </div>
-      }
     </div>
 
     <div class="skills-grid">
@@ -25,8 +16,8 @@
         <div class="skill-card fade-up" [style.transition-delay]="(i * 60) + 'ms'">
           <h3 class="skill-group-title">{{ group.title }}</h3>
           <div class="skill-tags">
-            @for (skill of group.skills; track skill.name) {
-              <span class="tag" [class.accent]="skill.accent">{{ skill.name }}</span>
+            @for (skill of group.skills; track skill) {
+              <span class="tag">{{ skill }}</span>
             }
           </div>
         </div>
