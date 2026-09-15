@@ -42,7 +42,7 @@ export class ProjectsComponent implements AfterViewInit {
       ],
       url: 'https://cbmfisioterapia.com',
       urlLabel: 'cbmfisioterapia.com',
-      image: '/projects/cbm-fisioterapia.png',
+      image: 'projects/cbm-fisioterapia.png',
     },
   ];
 
