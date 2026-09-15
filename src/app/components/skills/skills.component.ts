@@ -23,7 +23,7 @@ export class SkillsComponent implements AfterViewInit {
     },
     {
       title: 'Arquitectura',
-      skills: ['Microservicios', 'Hexagonal', 'DDD', 'REST APIs', 'Event-Driven'],
+      skills: ['Microservicios', 'Hexagonal', 'DDD', 'REST APIs', 'gRPC', 'Event-Driven'],
     },
     {
       title: 'Bases de datos',
@@ -31,15 +31,15 @@ export class SkillsComponent implements AfterViewInit {
     },
     {
       title: 'Cloud & DevOps',
-      skills: ['AWS EKS', 'Kubernetes', 'Docker', 'Jenkins', 'CI/CD', 'Git'],
+      skills: ['AWS EKS', 'Kubernetes', 'Docker', 'Jenkins', 'CI/CD', 'Git', 'DevSecOps'],
     },
     {
       title: 'Mensajería',
-      skills: ['Apache Kafka', 'RabbitMQ'],
+      skills: ['Apache Kafka', 'RabbitMQ', 'Amazon SQS/SNS'],
     },
     {
       title: 'Observabilidad & Calidad',
-      skills: ['New Relic', 'Datadog', 'TDD', 'BDD', 'JUnit', 'Mockito', 'Agile Scrum'],
+      skills: ['New Relic', 'Datadog', 'Elastic Stack (Kibana)', 'TDD', 'BDD', 'JUnit', 'Mockito', 'Agile Scrum'],
     },
     {
       title: 'Seguridad & API',
