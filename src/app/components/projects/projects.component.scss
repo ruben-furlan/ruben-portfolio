@@ -79,8 +79,13 @@
 
 .project-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.625rem;
+
+  .badge {
+    white-space: nowrap;
+  }
 }
 
 .project-period {
@@ -115,6 +120,52 @@
     padding-left: 0.85rem;
     font-size: 0.845rem;
     line-height: 1.5;
+    color: var(--text-chip);
+
+    &::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+  }
+}
+
+.ai-badge svg {
+  width: 13px;
+  height: 13px;
+}
+
+.project-ai {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1rem 1.125rem;
+  border-radius: var(--r-btn);
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
+}
+
+.project-ai-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.project-ai-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding-left: 0.85rem;
+    font-size: 0.845rem;
+    line-height: 1.55;
     color: var(--text-chip);
 
     &::before {

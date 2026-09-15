@@ -33,6 +33,15 @@
                   En curso
                 </span>
               }
+              @if (project.ai) {
+                <span class="badge ai-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3 l1.9 5.1 L19 10 l-5.1 1.9 L12 17 l-1.9 -5.1 L5 10 l5.1 -1.9 z" />
+                    <path d="M19 15 l0.8 2.2 L22 18 l-2.2 0.8 L19 21 l-0.8 -2.2 L16 18 l2.2 -0.8 z" />
+                  </svg>
+                  Desarrollado con IA
+                </span>
+              }
               <span class="project-period">{{ project.period }}</span>
             </div>
 
@@ -44,6 +53,17 @@
                 <li>{{ feat }}</li>
               }
             </ul>
+
+            @if (project.ai) {
+              <div class="project-ai">
+                <span class="project-ai-label">Cómo usé la IA</span>
+                <ul class="project-ai-list">
+                  @for (point of project.ai; track point) {
+                    <li>{{ point }}</li>
+                  }
+                </ul>
+              </div>
+            }
 
             <div class="project-stack">
               @for (tech of project.stack; track tech) {

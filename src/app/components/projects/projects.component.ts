@@ -12,6 +12,8 @@ interface Project {
   current?: boolean;
   /** Ruta a la captura del proyecto; sin ella se muestra un placeholder. */
   image?: string;
+  /** Cómo se usó la IA en el proyecto; si existe, se destaca en la tarjeta. */
+  ai?: string[];
 }
 
 @Component({
@@ -43,6 +45,30 @@ export class ProjectsComponent implements AfterViewInit {
       url: 'https://cbmfisioterapia.com',
       urlLabel: 'cbmfisioterapia.com',
       image: 'projects/cbm-fisioterapia.png',
+    },
+    {
+      name: 'Marü Bakery — tienda online',
+      period: 'Jun 2026 — Jul 2026',
+      description:
+        'Web y panel de administración para una pastelería artesanal de Montevideo. Los clientes arman su pedido desde la vitrina y la dueña gestiona productos, textos, envíos y pedidos sin tocar código. Desarrollada de principio a fin trabajando con agentes de IA.',
+      stack: ['Angular 20', 'Tailwind CSS 4', 'Supabase', 'Netlify', 'Resend', 'Claude Code'],
+      features: [
+        'Carrito de pedidos',
+        'Panel de administración',
+        'Zonas de envío con coste',
+        'Avisos por email automáticos',
+        'Contenido editable',
+        'Accesibilidad AA',
+      ],
+      ai: [
+        'Repositorio preparado para Claude Code, OpenCode y Codex con contexto compartido del proyecto',
+        'Subagentes especializados en revisión de código, Supabase y diseño de marca',
+        'Skills propias para crear componentes, migrar la base de datos y revisar antes de desplegar',
+        'Hooks y MCP: formateo automático, bloqueo de comandos peligrosos, docs actualizadas y navegador real',
+      ],
+      url: 'https://marubakery.casa',
+      urlLabel: 'marubakery.casa',
+      image: 'projects/marubakery.png',
     },
   ];
 
